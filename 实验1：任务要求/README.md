@@ -29,8 +29,6 @@
 
 ```
 
-程序设计框架参考：https://github.com/tsingke/OOP_Lab/blob/master/chapt_1_ScoreSystem/README.md
-
 
 
 ## 二、实验说明
@@ -61,7 +59,7 @@
 
 ## 三、实验报告要求
 
-请务必按照`课程实验报告模板`([点击下载](https://github.com/tsingke/OOP_Homework/raw/master/%E3%80%8A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF.docx))撰写实验报告，报告内如涉及流程图或矢量图绘制，建议采用微软的[visio](https://pan.baidu.com/s/1L4y1pWXcJjojZlIAQZjPAg)绘制，报告内容若需粘贴代码，请采用开源软件 [highlight](http://www.andre-simon.de/zip/highlight-setup-3.53-x64.exe) 将.c或.cpp文件转换成.rtf高亮可移植代码，然后粘贴rtf得到word报告内。
+请务必按照`课程实验报告模板`([点击下载](https://github.com/tsingke/OOP_CS2020/blob/master/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/%E3%80%8A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF.docx))撰写实验报告，报告内如涉及流程图或矢量图绘制，建议采用微软的[visio](https://pan.baidu.com/s/1L4y1pWXcJjojZlIAQZjPAg)绘制，报告内容若需粘贴代码，请采用开源软件 [highlight](http://www.andre-simon.de/zip/highlight-setup-3.53-x64.exe) 将.c或.cpp文件转换成.rtf高亮可移植代码，然后粘贴rtf得到word报告内。
 
 ## 四、实验报告提交
 

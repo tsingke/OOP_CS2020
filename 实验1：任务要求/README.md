@@ -48,7 +48,6 @@
 2017000004 Bill 95 76 98
 2017000005 Andy 78 80 88
 2017000006 Robin 82 90 85
-
 ```
 
 
@@ -66,6 +65,7 @@
 
 ## 四、实验报告提交
 
-   作业提交：请将实验报告PDF格式版提交到`云班课` https://www.mosoteach.cn/web/index.php?c=passport&m=index 
+   作业提交：1. 提交电子版报告到`云班课` https://www.mosoteach.cn/web/index.php?c=passport&m=index 
+             2. 打印纸质版报告1份交给课代表（下次实验课时送达E315）
    
-   截止时间：2019年09月16号
+  

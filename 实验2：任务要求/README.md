@@ -34,6 +34,4 @@
 
 ---
 
-由于github 不支持`latex`命令，因此上面的公式代码未能正确显示，可以参考这里：
 
-![README](README.jpg)

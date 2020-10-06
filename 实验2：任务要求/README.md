@@ -12,7 +12,8 @@
 
 *  掌握 c++ 输入输出的基本使用方法
 *  掌握多种不同的代码注释方式
-*  深入理解const定义常量指针的实现机制
+*  深入理解const定义常量指针的原理
+*  掌握源码调试的方法及VS快捷键
 
 ## 二、实验任务
 
@@ -37,5 +38,22 @@
 请务必按照`课程实验报告模板`([点击下载](https://github.com/tsingke/OOP_Homework/raw/master/%E3%80%8A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF.docx))撰写实验报告，报告内如涉及流程图或矢量图绘制，建议采用微软的[visio](https://pan.baidu.com/s/1L4y1pWXcJjojZlIAQZjPAg)绘制，报告内容若需粘贴代码，请采用开源软件 [highlight](http://www.andre-simon.de/zip/highlight-setup-3.53-x64.exe) 将.c或.cpp文件转换成.rtf高亮可移植代码，然后粘贴rtf得到word报告内。报告统一提交到云班课（提交pdf版本）。
 
 ---
+
+  **附录：VS调试快捷键**
+
+   ```  
+   * 单步调试(走马观花F10, 步步深入F11,配合使用) 
+   
+   * 断点运行(F9), 直接运行到光标所在代码行(ctrl + F10)
+   
+   * 注释(ctrl+ K + C), 取消注释(ctrl+ K + U)
+   
+   * 代码格式化(先选中代码，然后ctrl + K + F)
+   
+   * 定义跳转(F12), 跳回原位(ctrl + 减号)
+   
+   * 编译调试(F5) 
+   ```
+
 
 

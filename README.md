@@ -12,3 +12,7 @@
 * 上机时间： 每周二晚 19:00 -- 20:30
 
 * 上机地点：  E315机房 
+
+---
+
+![image](https://github.com/tsingke/OOP_CS2020/blob/master/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/SeatArrangement.png)

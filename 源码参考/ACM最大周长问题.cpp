@@ -1,8 +1,8 @@
 /*************************************************
-** ¹¦ÄÜ : ACM-Ä¾¹÷×î´óÖÜ³¤ÎÊÌâ
-** ×÷Õß : tsingke
-** ´´½¨ : 2020-10-19 / 08:38
-** °æÈ¨ : tsingke@sdnu.edu.cn
+** åŠŸèƒ½ : ACM-æœ¨æ£æœ€å¤§å‘¨é•¿é—®é¢˜
+** ä½œè€… : tsingke
+** åˆ›å»º : 2020-10-19 / 08:38
+** ç‰ˆæƒ : tsingke@sdnu.edu.cn
 /**************************************************/
 
 #include <iostream>
@@ -29,10 +29,10 @@ double perim_c = 0.0;
 
 
 /*----------------------------------*
-			Èı½ÇĞÎÏà¹ØĞÅÏ¢
+	 ä¸‰è§’å½¢ç›¸å…³ä¿¡æ¯
 *-----------------------------------*/
 
-//¼ÆËãÊÇ·ñ¹¹³ÉÈı½ÇĞÎ
+//è®¡ç®—æ˜¯å¦æ„æˆä¸‰è§’å½¢
 int isTriangle(const double &r1,const double &r2, const double&r3)
 {
 	if ((r1 + r2 > r3) && (r1 + r3 > r2) && (r2 + r3 > r1))
@@ -43,7 +43,7 @@ int isTriangle(const double &r1,const double &r2, const double&r3)
 		return 0;
 }
 
-//¼ÆËãÈı½ÇĞÎÖÜ³¤
+//è®¡ç®—ä¸‰è§’å½¢å‘¨é•¿
 double perimeter(const double &r1, const double &r2, const double&r3)
 {
 	return (r1 + r2 + r3);
@@ -51,7 +51,7 @@ double perimeter(const double &r1, const double &r2, const double&r3)
 
 
 
-//¼ÆËãÈı½ÇĞÎÃæ»ı
+//è®¡ç®—ä¸‰è§’å½¢é¢ç§¯
 double area(const double &r1, const double &r2, const double&r3)
 {
 
@@ -67,7 +67,7 @@ double area(const double &r1, const double &r2, const double&r3)
 
 
 /*----------------------------------*
-  Èı½ÇĞÎ¹¹½¨Ëã·¨:µÚÒ»ÖÖ,¸´ÔÓ¶Èo(n^3))
+  ä¸‰è§’å½¢æ„å»ºç®—æ³•:ç¬¬ä¸€ç§,å¤æ‚åº¦o(n^3))
 *-----------------------------------*/
 int searchMaxLength(const double *plen, const int num)
 {
@@ -88,14 +88,14 @@ int searchMaxLength(const double *plen, const int num)
 					{
 						maxPerimeter = tempPerimeter;
 
-						//¼ÇÂ¼µ±Ç°±ß³¤
+						//è®°å½•å½“å‰è¾¹é•¿
 						perim_a = plen[i];
 						perim_b = plen[j];
 						perim_c = plen[k];
 
 					}
 
-					canConstructTriangle = true;//´æÔÚ¹¹³ÉÈı½ÇĞÎµÄÄ¾¹÷
+					canConstructTriangle = true;//å­˜åœ¨æ„æˆä¸‰è§’å½¢çš„æœ¨æ£
 
 				}
 
@@ -108,7 +108,7 @@ int searchMaxLength(const double *plen, const int num)
 
 	if (canConstructTriangle == false)
 	{
-		cout << "ÌáÊ¾: µ±Ç°Ä¾¹÷³¤¶ÈÎŞ·¨¹¹³ÉÈÎºÎÈı½ÇĞÎ!" << endl;
+		cout << "æç¤º: å½“å‰æœ¨æ£é•¿åº¦æ— æ³•æ„æˆä»»ä½•ä¸‰è§’å½¢!" << endl;
 		return 0;
 	}
 	else
@@ -137,29 +137,26 @@ int searchMaxArea(const double *plen, const int num)
 					{
 						maxArea = tempArea;
 
-						//¼ÇÂ¼µ±Ç°±ß³¤
+						//è®°å½•å½“å‰è¾¹é•¿
 						area_a = plen[i];
 						area_b = plen[j];
 						area_c = plen[k];
 
 					}
 
-
-
-					canConstructTriangle = 1;//´æÔÚ¹¹³ÉÈı½ÇĞÎµÄÄ¾¹÷
+					canConstructTriangle = 1;//å­˜åœ¨æ„æˆä¸‰è§’å½¢çš„æœ¨æ£
 
 				}
 
 				else
 					continue;
 			}
-
 		}
 	}
 
 	if (canConstructTriangle == 0)
 	{
-		cout << "ÌáÊ¾: µ±Ç°Ä¾¹÷³¤¶ÈÎŞ·¨¹¹³ÉÈÎºÎÈı½ÇĞÎ!" << endl;
+		cout << "æç¤º: å½“å‰æœ¨æ£é•¿åº¦æ— æ³•æ„æˆä»»ä½•ä¸‰è§’å½¢!" << endl;
 		return 0;
 
 	}
@@ -170,7 +167,7 @@ int searchMaxArea(const double *plen, const int num)
 }
 
 /*----------------------------------*
-  Èı½ÇĞÎ¹¹½¨Ëã·¨:µÚ¶şÖÖ,¸´ÔÓ¶Èo(n^log(n)))
+  ä¸‰è§’å½¢æ„å»ºç®—æ³•:ç¬¬äºŒç§,å¤æ‚åº¦o(n^log(n)))
 *-----------------------------------*/
 
 int cmpfunc(const void* a, const void* b)
@@ -192,11 +189,11 @@ int cmpfunc(const void* a, const void* b)
 int searchMaxLength_log(double *plen, const int num)
 {
 
-	//1. °´ÕÕÄ¾¹÷³¤¶È´Ó´óµ½Ğ¡ÅÅĞò
+	//1. æŒ‰ç…§æœ¨æ£é•¿åº¦ä»å¤§åˆ°å°æ’åº
 	qsort(plen, num, sizeof(plen[0]), cmpfunc);
 
 
-	//2. ¹¹½¨Èı½ÇĞÎ,Êä³ö×î´óÖÜ³¤
+	//2. æ„å»ºä¸‰è§’å½¢,è¾“å‡ºæœ€å¤§å‘¨é•¿
 	bool canConstructTriangle = 0;
 
 	for (int i = 0; i < num; i++)
@@ -214,16 +211,16 @@ int searchMaxLength_log(double *plen, const int num)
 					{
 						maxPerimeter = tempPerimeter;
 
-						//¼ÇÂ¼µ±Ç°±ß³¤
+						//è®°å½•å½“å‰è¾¹é•¿
 						perim_a = plen[i];
 						perim_b = plen[j];
 						perim_c = plen[k];
 
 					}
 
-					canConstructTriangle = 1;//´æÔÚ¹¹³ÉÈı½ÇĞÎµÄÄ¾¹÷
+					canConstructTriangle = 1;//å­˜åœ¨æ„æˆä¸‰è§’å½¢çš„æœ¨æ£
 
-					break;//ÕÒµ½ºó¾ÍÖÕÖ¹ËÑË÷,²»ÔÙÍùÏÂËÑË÷
+					break;//æ‰¾åˆ°åå°±ç»ˆæ­¢æœç´¢,ä¸å†å¾€ä¸‹æœç´¢
 
 				}
 
@@ -247,7 +244,7 @@ int searchMaxLength_log(double *plen, const int num)
 
 
 /*----------------------------------*
-		  Main Function
+	      ä¸»å‡½æ•°
 *-----------------------------------*/
 
 int main()
@@ -255,20 +252,20 @@ int main()
 
 
 	/*----------------------------------*
-		   1. ÊäÈëÄ¾¹÷¸öÊıºÍ³¤¶È
+		   1. è¾“å…¥æœ¨æ£ä¸ªæ•°å’Œé•¿åº¦
 	*-----------------------------------*/
-	cout << "-------------- ÊäÈëÊı¾İ --------------" << endl;
+	cout << "-------------- è¾“å…¥æ•°æ® --------------" << endl;
 
-	cout << "ÇëÊäÈëÄ¾¹÷µÄ×Ü¸öÊı m = ";
+	cout << "è¯·è¾“å…¥æœ¨æ£çš„æ€»ä¸ªæ•° m = ";
 
 	int m;
 	cin >> m;
 
-	// ¶¯Ì¬·ÖÅäÄÚ´æ¿Õ¼ä£¬´æ´¢Ä¾¹÷³¤¶È
+	// åŠ¨æ€åˆ†é…å†…å­˜ç©ºé—´ï¼Œå­˜å‚¨æœ¨æ£é•¿åº¦
 
 	double *len = new double[m];
 
-	cout << "ÇëÒÀ´ÎÊäÈë" << m << "¸ùÄ¾¹÷µÄ³¤¶È"<<endl;
+	cout << "è¯·ä¾æ¬¡è¾“å…¥" << m << "æ ¹æœ¨æ£çš„é•¿åº¦"<<endl;
 
 	for (int i = 0; i < m; i++)
 	{
@@ -279,50 +276,50 @@ int main()
 	}
 	
 
-	cout <<endl<<"-------------- Êä³ö½á¹û --------------" << endl;
+	cout <<endl<<"-------------- è¾“å‡ºç»“æœ --------------" << endl;
 
 
 	/*----------------------------------*
-	      2. ËÑË÷×î´óÖÜ³¤,²¢Êä³öÖÜ³¤
+	      2. æœç´¢æœ€å¤§å‘¨é•¿,å¹¶è¾“å‡ºå‘¨é•¿
 	*-----------------------------------*/
 
 
-	//int success = searchMaxLength(len, m); //¸´ÔÓ¶È¸ß
-	int length_success = searchMaxLength_log(len, m);//¸´ÔÓ¶ÈµÍ
+	//int success = searchMaxLength(len, m); //å¤æ‚åº¦é«˜
+	int length_success = searchMaxLength_log(len, m);//å¤æ‚åº¦ä½
 
 	if (length_success == 1)
 	{
-		cout << "×î´óÖÜ³¤: " << maxPerimeter << " (±ß³¤Îª: " << perim_a << "," << perim_b << "," << perim_c << ")" << endl;
+		cout << "æœ€å¤§å‘¨é•¿: " << maxPerimeter << " (è¾¹é•¿ä¸º: " << perim_a << "," << perim_b << "," << perim_c << ")" << endl;
 
 	}
 	else
 	{
 		cout << 0 << endl;
-		cout << "ÌáÊ¾: µ±Ç°Ä¾¹÷³¤¶ÈÎŞ·¨¹¹³ÉÈÎºÎÈı½ÇĞÎ!" << endl;
+		cout << "æç¤º: å½“å‰æœ¨æ£é•¿åº¦æ— æ³•æ„æˆä»»ä½•ä¸‰è§’å½¢!" << endl;
 	}
 	
 
 	/*----------------------------------*
-		  3. ËÑË÷×î´óÃæ»ı,²¢Êä³öÃæ»ı
+		  3. æœç´¢æœ€å¤§é¢ç§¯,å¹¶è¾“å‡ºé¢ç§¯
 	*-----------------------------------*/
 
 	int area_success = searchMaxArea(len, m);
 
 	if (area_success == 1)
 	{
-		cout << "×î´óÃæ»ı: " << maxArea << " (±ß³¤Îª: " << area_a << "," << area_b << "," << area_c << ")" << endl << endl;
+		cout << "æœ€å¤§é¢ç§¯: " << maxArea << " (è¾¹é•¿ä¸º: " << area_a << "," << area_b << "," << area_c << ")" << endl << endl;
 
 	}
 	else
 	{
 		cout << 0 << endl;
-		cout << "ÌáÊ¾: µ±Ç°Ä¾¹÷³¤¶ÈÎŞ·¨¹¹³ÉÈÎºÎÈı½ÇĞÎ!"<<endl;
+		cout << "æç¤º: å½“å‰æœ¨æ£é•¿åº¦æ— æ³•æ„æˆä»»ä½•ä¸‰è§’å½¢!"<<endl;
 	}
 
 
 
 	/*----------------------------------*
-	       4.ÊÍ·Å¶¯Ì¬ÄÚ´æ¿Õ¼ä
+	       4.é‡Šæ”¾åŠ¨æ€å†…å­˜ç©ºé—´
 	*-----------------------------------*/
 
 

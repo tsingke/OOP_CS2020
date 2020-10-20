@@ -196,7 +196,7 @@ int searchMaxLength_nlogn(double *plen, const int num)
 	
 	int i=0, j=1, k=2;
 
-	while (k<=num)
+	while (k< num)
 	{
 		if (isTriangle(plen[i],plen[j],plen[k]))
 		{
@@ -250,7 +250,7 @@ int searchMaxArea_nlogn(double* plen, const int num)
 
 	int i = 0, j = 1, k = 2;
 
-	while (k <= num)
+	while (k < num)
 	{
 		if (isTriangle(plen[i], plen[j], plen[k]))
 		{

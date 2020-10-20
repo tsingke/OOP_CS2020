@@ -194,9 +194,9 @@ int searchMaxLength_nlogn(double *plen, const int num)
 	bool canConstructTriangle = 0;
 
 	
-	int i=1, j=2, k=3;
+	int i=0, j=1, k=2;
 
-	while (k<=num)
+	while (k< num)
 	{
 		if (isTriangle(plen[i],plen[j],plen[k]))
 		{
@@ -213,16 +213,16 @@ int searchMaxLength_nlogn(double *plen, const int num)
 
 			}
 
-			i++;
-			j++;
-			k++;
-
+	
 			canConstructTriangle = 1;//存在构成三角形的木棍
 
-		}
-		else
-			continue;
+			break;//找到第一个即可停止搜索
 
+		}
+		
+		i++;
+		j++;
+		k++;
 	}
 
 
@@ -248,9 +248,9 @@ int searchMaxArea_nlogn(double* plen, const int num)
 	bool canConstructTriangle = 0;
 
 
-	int i = 1, j = 2, k = 3;
+	int i = 0, j = 1, k = 2;
 
-	while (k <= num)
+	while (k < num)
 	{
 		if (isTriangle(plen[i], plen[j], plen[k]))
 		{
@@ -267,16 +267,14 @@ int searchMaxArea_nlogn(double* plen, const int num)
 				area_c = plen[k];
 			}
 
-			i++;
-			j++;
-			k++;
-
 			canConstructTriangle = 1;//存在构成三角形的木棍
-
+		
 		}
 
-		else
-			continue;
+
+		i++;
+		j++;
+		k++;
 
 	}
 

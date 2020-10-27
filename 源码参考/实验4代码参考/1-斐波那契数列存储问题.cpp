@@ -7,14 +7,11 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <windows.h>
 
 using namespace std;
 
-
-
 /*----------------------------------*
-		     子函数
+              子函数
 *-----------------------------------*/
 void Fibonacci(double * p, int N)
 {
@@ -73,7 +70,7 @@ int main()
 	show(parray, N);
 
 
-	//4. 释放动态内存
+	//5. 释放动态内存(不要忘记!)
 
 	delete[] parray;
 

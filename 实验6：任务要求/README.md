@@ -36,7 +36,7 @@
 
 【**程序设计题**】请采用C++面向对象程序设计思想设计类，并实现类。 要求程序代码: 清晰简洁易读，良好的开闭性， 编程风格规范统一。
 
-设计某高校研究生 `Graduate 类`, 该类包含研究生姓名（string name)、性别 (bool gender)、学号 (int id)、入学成绩（double score）、研究领域 (string research) 和指导教师 (string tutor) 、学校名称（const string university）与该研究生类有关的函数如下：                                                                                                                                                    
+设计某高校研究生 `Graduate 类`, 该类包含研究生姓名（string name)、性别 (bool gender)、学号 (int id)、入学成绩（double score）、研究领域 (string research) 、指导教师 (string tutor) 和学校名称（const string university）与该研究生类有关的函数如下：                                                                                                                                                    
 * 初始化与释放研究生对象数据（三构一析）；
 
 * 采用`普通成员函数`形式输出研究生基本数据信息；

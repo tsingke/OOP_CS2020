@@ -15,4 +15,4 @@
 
 ---
 
-![image](ci2021.png)
+![image](https://github.com/tsingke/OOP_CS2020/blob/master/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/SeatArrangement.png)
